@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="property1.html">Property1</a></li>
+                <li><a href="property2.html">Property2</a></li>
+                <li><a href="property3.html">Property3</a></li>
+                <li><a href="properties.html">Available Property</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-container">
+        <h2>Contact Us for Property Inquiries</h2>
+        <form action="contact.html" method="get">
+            <div class="input-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property_type" required>
+                    <option value="house">House</option>
+                    <option value="condominium">Condominium</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="price-range">Price Range:</label>
+                <input type="text" id="price-range" name="price_range" required>
+            </div>
+            <div class="input-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+        
+        <footer>
+            <p>&copy; 2024 Real Estate Agent</p>
+        </footer>
+   
+</body>
+</html>
